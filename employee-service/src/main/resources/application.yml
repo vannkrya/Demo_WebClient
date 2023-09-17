@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo_webclient
+    username: postgres
+    password: krya
+    driver-class-name: org.postgresql.Driver
+  application:
+    name: employee-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true # Set to true to display SQL queries in the console
+
+server:
+  port: 8080
+  servlet:
+    context-path: /employee-service
+
+
+addressService:
+  base:
+    url: http://localhost:8081/address-service

@@ -1,0 +1,2 @@
+rootProject.name = 'demo-webclient'
+include 'employee-service', 'address-service'
